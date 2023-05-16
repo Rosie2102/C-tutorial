@@ -8,7 +8,14 @@ string Square::displaySquare() {
 }
 
 int main() {
-  Square * s = new Square(4, "PeppaSquare");
-  cout << s->displaySquare();
+  Square * s0 = new Square(4, "PeppaSquare");
+  cout << s0->displaySquare();
+
+  Square s1;
+  cout << s1.displaySquare();
+
+  Square s2(7, "PeppaSquare 3");
+  cout << s2.displaySquare();
+
   return 0;
 }
